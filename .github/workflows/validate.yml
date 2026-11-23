@@ -1,0 +1,27 @@
+name: Validate catalog
+
+on:
+  push:
+    paths: [catalog.json, scripts/validate.py]
+  pull_request:
+    paths: [catalog.json, scripts/validate.py]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Find previous revision
+        id: prev
+        run: |
+          PREV=$(git show HEAD~1:catalog.json 2>/dev/null | python3 -c "import json,sys; print(json.load(sys.stdin)['revision'])" 2>/dev/null || echo 0)
+          echo "rev=$PREV" >> "$GITHUB_OUTPUT"
+      - name: Validate
+        run: |
+          if git diff --quiet HEAD~1 -- catalog.json 2>/dev/null; then
+            python3 scripts/validate.py
+          else
+            python3 scripts/validate.py --min-revision ${{ steps.prev.outputs.rev }}
+          fi
