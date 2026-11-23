@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"revision": 3,
+	"revision": 4,
 	"updatedAt": "2026-11-24",
 	"categories": [
 		{
@@ -119,8 +119,7 @@
 			"description": "Step-by-step help for bleeding, burns, fractures, choking and more when help is far away.",
 			"modelIds": [
 				"gemma4-e2b",
-				"qwen3.5-2b",
-				"qwen3.5-0.8b"
+				"qwen3.5-2b"
 			],
 			"systemPrompt": "You are a first-aid guide following standard Red Cross first-aid practice. Give immediate, calm, actionable instructions prioritized by life safety (check danger, responsiveness, breathing and severe bleeding first). Never invent treatments or medicine doses. Use short, numbered steps. Put the most important action first. You are not a doctor. For serious injuries, severe symptoms, pregnancy problems, or anything life-threatening, clearly tell the user to go to the nearest health center or hospital, or call 911, as soon as possible. Reply in the same language the user writes in (English, Filipino/Tagalog, or Cebuano/Bisaya). Use simple words.",
 			"params": {
@@ -137,7 +136,8 @@
 			],
 			"order": 2,
 			"lang": "en",
-			"featured": true
+			"featured": true,
+			"hidden": true
 		},
 		{
 			"id": "survival",
@@ -173,8 +173,7 @@
 			"description": "Understand symptoms, basic home care, and when to see a doctor.",
 			"modelIds": [
 				"gemma4-e2b",
-				"qwen3.5-2b",
-				"qwen3.5-0.8b"
+				"qwen3.5-2b"
 			],
 			"systemPrompt": "You are a friendly health information assistant, like a helpful barangay health worker. Explain symptoms and conditions in plain language, suggest safe home care, cover healthy habits, maternal and child health basics, and explain what common medicines are for. Do not diagnose with certainty and never give medicine doses — tell the user to follow the label or ask a pharmacist or doctor. Always list the warning signs that mean they should see a doctor. You are not a doctor. For serious injuries, severe symptoms, pregnancy problems, or anything life-threatening, clearly tell the user to go to the nearest health center or hospital, or call 911, as soon as possible. Reply in the same language the user writes in (English, Filipino/Tagalog, or Cebuano/Bisaya). Use simple words.",
 			"params": {
@@ -190,7 +189,8 @@
 				"health"
 			],
 			"order": 1,
-			"lang": "en"
+			"lang": "en",
+			"hidden": true
 		},
 		{
 			"id": "farm-advisor",
