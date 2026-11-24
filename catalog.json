@@ -1,32 +1,57 @@
 {
 	"schemaVersion": 1,
-	"revision": 5,
+	"revision": 6,
 	"updatedAt": "2026-11-24",
 	"categories": [
 		{
 			"id": "emergency",
 			"title": "Emergency",
-			"order": 1
+			"order": 1,
+			"i18n": {
+				"fil": {
+					"title": "Emergency"
+				}
+			}
 		},
 		{
 			"id": "health",
 			"title": "Health",
-			"order": 2
+			"order": 2,
+			"i18n": {
+				"fil": {
+					"title": "Kalusugan"
+				}
+			}
 		},
 		{
 			"id": "livelihood",
 			"title": "Livelihood",
-			"order": 3
+			"order": 3,
+			"i18n": {
+				"fil": {
+					"title": "Kabuhayan"
+				}
+			}
 		},
 		{
 			"id": "learning",
 			"title": "Learning",
-			"order": 4
+			"order": 4,
+			"i18n": {
+				"fil": {
+					"title": "Pag-aaral"
+				}
+			}
 		},
 		{
 			"id": "everyday",
 			"title": "Everyday",
-			"order": 5
+			"order": 5,
+			"i18n": {
+				"fil": {
+					"title": "Araw-araw"
+				}
+			}
 		}
 	],
 	"models": [
@@ -109,13 +134,24 @@
 			],
 			"order": 1,
 			"lang": "en",
-			"featured": true
+			"featured": true,
+			"i18n": {
+				"fil": {
+					"title": "Paghahanda sa Sakuna",
+					"description": "Bagyo, baha, lindol at pagputok ng bulkan — ano ang gagawin bago, habang at pagkatapos.",
+					"starterQuestions": [
+						"Ano ang dapat laman ng go-bag ng pamilya namin?",
+						"Ano ang gagawin bago dumating ang bagyo?",
+						"Ano ang gagawin habang lumilindol?"
+					]
+				}
+			}
 		},
 		{
 			"id": "first-aid",
 			"title": "First Aid",
 			"categoryId": "emergency",
-			"icon": "🩹",
+			"icon": "⛑️",
 			"description": "Step-by-step help for bleeding, burns, fractures, choking and more when help is far away.",
 			"modelIds": [
 				"gemma4-e2b",
@@ -137,7 +173,18 @@
 			"order": 2,
 			"lang": "en",
 			"featured": true,
-			"hidden": true
+			"hidden": true,
+			"i18n": {
+				"fil": {
+					"title": "First Aid",
+					"description": "Sunud-sunod na tulong sa pagdurugo, paso, bali, pagkabulon at iba pa kapag malayo ang tulong.",
+					"starterQuestions": [
+						"Paano patigilin ang malakas na pagdurugo?",
+						"Ano ang gagawin sa paso?",
+						"Paano tulungan ang taong nabubulunan?"
+					]
+				}
+			}
 		},
 		{
 			"id": "survival",
@@ -163,13 +210,24 @@
 				"offline"
 			],
 			"order": 3,
-			"lang": "en"
+			"lang": "en",
+			"i18n": {
+				"fil": {
+					"title": "Survival at Off-Grid",
+					"description": "Malinis na tubig, apoy, masisilungan, pag-iimbak ng pagkain at pamumuhay nang walang kuryente.",
+					"starterQuestions": [
+						"Paano gawing ligtas inumin ang tubig?",
+						"Paano panatilihing sariwa ang pagkain nang walang ref?",
+						"Paano mag-charge ng telepono kapag brownout?"
+					]
+				}
+			}
 		},
 		{
 			"id": "health-helper",
 			"title": "Health Helper",
 			"categoryId": "health",
-			"icon": "🩺",
+			"icon": "💊",
 			"description": "Understand symptoms, basic home care, and when to see a doctor.",
 			"modelIds": [
 				"gemma4-e2b",
@@ -190,7 +248,18 @@
 			],
 			"order": 1,
 			"lang": "en",
-			"hidden": true
+			"hidden": true,
+			"i18n": {
+				"fil": {
+					"title": "Katulong sa Kalusugan",
+					"description": "Unawain ang mga sintomas, simpleng pag-aalaga sa bahay, at kung kailan dapat magpatingin sa doktor.",
+					"starterQuestions": [
+						"May lagnat ang anak ko. Ano ang dapat gawin?",
+						"Ano ang sintomas ng dengue?",
+						"Paano natural na pababain ang blood pressure?"
+					]
+				}
+			}
 		},
 		{
 			"id": "farm-advisor",
@@ -218,7 +287,18 @@
 			],
 			"order": 1,
 			"lang": "en",
-			"featured": true
+			"featured": true,
+			"i18n": {
+				"fil": {
+					"title": "Tagapayo sa Pagsasaka",
+					"description": "Palay, mais, gulay, peste, lupa at panahon ng pagtatanim para sa mga sakahan sa Pilipinas.",
+					"starterQuestions": [
+						"Bakit naninilaw ang dahon ng palay ko?",
+						"Paano labanan ang peste nang walang kemikal?",
+						"Anong gulay ang magandang itanim sa tag-ulan?"
+					]
+				}
+			}
 		},
 		{
 			"id": "livestock",
@@ -245,7 +325,18 @@
 				"agriculture"
 			],
 			"order": 2,
-			"lang": "en"
+			"lang": "en",
+			"i18n": {
+				"fil": {
+					"title": "Hayupan at Manukan",
+					"description": "Manok, baboy at kambing sa bakuran — pagpapakain, kulungan at karaniwang sakit.",
+					"starterQuestions": [
+						"Ano ang dapat ipakain sa native na manok?",
+						"Ayaw kumain ng baboy ko. Ano kaya ang problema?",
+						"Paano magsimulang mag-alaga ng kambing?"
+					]
+				}
+			}
 		},
 		{
 			"id": "small-business",
@@ -271,7 +362,18 @@
 				"livelihood"
 			],
 			"order": 3,
-			"lang": "en"
+			"lang": "en",
+			"i18n": {
+				"fil": {
+					"title": "Maliit na Negosyo",
+					"description": "Presyo sa sari-sari store, simpleng pagtatala ng benta, pagbabadyet at pag-iipon.",
+					"starterQuestions": [
+						"Magkano ang dapat kong patong sa paninda sa sari-sari store?",
+						"Tulungan akong gumawa ng simpleng tala ng benta araw-araw",
+						"Paano mag-budget ng kita sa negosyo?"
+					]
+				}
+			}
 		},
 		{
 			"id": "school-tutor",
@@ -299,7 +401,18 @@
 			],
 			"order": 1,
 			"lang": "en",
-			"featured": true
+			"featured": true,
+			"i18n": {
+				"fil": {
+					"title": "Tutor sa Paaralan",
+					"description": "Matiyagang tulong sa math, science, English at Filipino para sa mga estudyante ng DepEd K-12.",
+					"starterQuestions": [
+						"Ipaliwanag nang simple ang photosynthesis",
+						"Paano lutasin ang 2x + 5 = 13?",
+						"Ano ang pangngalan at pandiwa?"
+					]
+				}
+			}
 		},
 		{
 			"id": "language-helper",
@@ -323,7 +436,18 @@
 				"language"
 			],
 			"order": 2,
-			"lang": "en"
+			"lang": "en",
+			"i18n": {
+				"fil": {
+					"title": "Katulong sa Wika",
+					"description": "Magsalin sa English, Filipino at Cebuano, at pagandahin ang grammar mo.",
+					"starterQuestions": [
+						"Isalin sa English: Salamat sa tulong mo",
+						"Tama ba ang pangungusap na ito: She don't like rice",
+						"Paano sabihin ang 'Nasaan ang ospital?' sa Bisaya?"
+					]
+				}
+			}
 		},
 		{
 			"id": "writing-helper",
@@ -349,7 +473,169 @@
 				"writing"
 			],
 			"order": 1,
-			"lang": "en"
+			"lang": "en",
+			"i18n": {
+				"fil": {
+					"title": "Katulong sa Pagsusulat",
+					"description": "Mga liham, aplikasyon sa trabaho, resume, at tulong sa pag-unawa ng mga form.",
+					"starterQuestions": [
+						"Tulungan akong sumulat ng excuse letter para sa paaralan",
+						"Gumawa ng simpleng resume para sa unang trabaho",
+						"Tulungan akong sumulat ng request letter sa barangay"
+					]
+				}
+			}
+		},
+		{
+			"id": "home-fix-it",
+			"title": "Home Fix-It",
+			"categoryId": "everyday",
+			"icon": "🔧",
+			"description": "Simple, safe home repairs: leaks, clogged drains, doors, roofs, appliances, and cleaning up after floods.",
+			"modelIds": [
+				"gemma4-e2b",
+				"qwen3.5-2b",
+				"qwen3.5-0.8b"
+			],
+			"systemPrompt": "You are a practical home-repair helper for households in the Philippines. You help with simple, safe fixes: leaking faucets and pipes, clogged drains and toilets, broken doors and windows, roof leaks, cleaning and repairing after floods and typhoons, mold, pests, and simple problems with appliances such as electric fans, rice cookers, refrigerators and water pumps. Suggest tools and materials that are easy to find in a hardware or sari-sari store. List the tools needed first, then give short, numbered steps. Safety comes first: always tell the user to switch off the power at the main breaker and unplug the appliance before touching anything electrical. Never guide work on live wires, the electrical panel or meter, or on LPG tanks, regulators and gas lines; for those, tell them to call a licensed electrician, the gas supplier, or the BFP. If they smell gas, tell them not to switch anything on or off, to open doors and windows, leave the house, and call 911. Do not advise climbing on a roof during strong wind or rain. If a repair could be dangerous or is not simple, say so and suggest a professional. Reply in the same language the user writes in (English, Filipino/Tagalog, or Cebuano/Bisaya). Use simple words.",
+			"params": {
+				"temperature": 0.3
+			},
+			"starterQuestions": [
+				"My faucet keeps dripping. How do I fix it?",
+				"Paano linisin ang bahay pagkatapos ng baha?",
+				"Our electric fan is not spinning. What should I check?"
+			],
+			"tags": [
+				"offline",
+				"home"
+			],
+			"order": 2,
+			"lang": "en",
+			"i18n": {
+				"fil": {
+					"title": "Kumpuni sa Bahay",
+					"description": "Simple at ligtas na pagkukumpuni: tagas, baradong lababo, pinto, bubong, appliances, at paglilinis pagkatapos ng baha.",
+					"starterQuestions": [
+						"Tumutulo ang gripo namin. Paano ito ayusin?",
+						"Paano linisin ang bahay pagkatapos ng baha?",
+						"Hindi umiikot ang electric fan namin. Ano ang dapat tingnan?"
+					]
+				}
+			}
+		},
+		{
+			"id": "money-scam-guard",
+			"title": "Money & Scam Guard",
+			"categoryId": "everyday",
+			"icon": "💰",
+			"description": "Family budget, saving, loans explained simply — and how to spot text, online and GCash scams.",
+			"modelIds": [
+				"gemma4-e2b",
+				"qwen3.5-2b",
+				"qwen3.5-0.8b"
+			],
+			"systemPrompt": "You are a friendly money helper for Filipino families. You help with household budgets, saving a little at a time, planning for school costs and emergencies, comparing prices, and understanding loans and interest in simple terms (including 5-6 lending, credit cards, salary loans, and SSS or Pag-IBIG loans). You also help people spot scams: fake prizes and raffles, 'wrong send' GCash or Maya requests, requests for OTPs or PINs, fake job offers, investment schemes that promise big, fast returns, and messages pretending to be from banks, relatives or government offices. Never ask for OTPs, PINs, passwords or account numbers, and remind users never to share them with anyone. Do not recommend specific investments, stocks or crypto, and do not promise returns. When something might be a scam, say clearly that it may be a scam, explain the warning signs, and tell them to check directly with the bank or office using its official number, and to report it to their bank and the authorities. Use short, numbered steps and simple peso examples. Reply in the same language the user writes in (English, Filipino/Tagalog, or Cebuano/Bisaya). Use simple words.",
+			"params": {
+				"temperature": 0.4
+			},
+			"starterQuestions": [
+				"Help me make a monthly budget for our family",
+				"May nag-text na nanalo daw ako ng premyo. Scam ba ito?",
+				"How much do I really pay on a 5-6 loan?"
+			],
+			"tags": [
+				"offline",
+				"money"
+			],
+			"order": 3,
+			"lang": "en",
+			"i18n": {
+				"fil": {
+					"title": "Pera at Bantay-Scam",
+					"description": "Budget ng pamilya, pag-iipon, pautang na ipinaliwanag nang simple — at paano makilala ang scam sa text, online at GCash.",
+					"starterQuestions": [
+						"Tulungan akong gumawa ng buwanang budget ng pamilya",
+						"May nag-text na nanalo daw ako ng premyo. Scam ba ito?",
+						"Magkano talaga ang babayaran ko sa 5-6?"
+					]
+				}
+			}
+		},
+		{
+			"id": "kusina",
+			"title": "Kusina: Food & Water",
+			"categoryId": "everyday",
+			"icon": "🍲",
+			"description": "Budget meals, cooking without power, keeping food safe without a fridge, and safe drinking water.",
+			"modelIds": [
+				"gemma4-e2b",
+				"qwen3.5-2b",
+				"qwen3.5-0.8b"
+			],
+			"systemPrompt": "You are a practical kitchen and food helper for Filipino households. You help with budget-friendly, nutritious meals using common local ingredients (rice, vegetables, eggs, canned goods, dried fish, malunggay), cooking with little fuel or without electricity, keeping food safe without a refrigerator, what to throw away after a flood or a long power outage, feeding children and older people, and making drinking water safe (boiling, using chlorine products only as directed on the label, filtering and storing water). Food safety comes first: when in doubt, throw it out. Food that touched floodwater should be thrown away, except sealed, undamaged cans that can be washed and disinfected. Do not give medical diets or treatment; for illness, allergies, babies under 6 months, or signs of dehydration, tell them to see a health worker. Use short, numbered steps and simple measurements. Reply in the same language the user writes in (English, Filipino/Tagalog, or Cebuano/Bisaya). Use simple words.",
+			"params": {
+				"temperature": 0.5
+			},
+			"starterQuestions": [
+				"Cheap and healthy meals for a family of five?",
+				"Paano gawing ligtas inumin ang tubig pagkatapos ng bagyo?",
+				"Which food should I throw away after a 2-day brownout?"
+			],
+			"tags": [
+				"offline",
+				"food"
+			],
+			"order": 4,
+			"lang": "en",
+			"i18n": {
+				"fil": {
+					"title": "Kusina: Pagkain at Tubig",
+					"description": "Murang ulam, pagluluto nang walang kuryente, ligtas na pagkain kahit walang ref, at ligtas na inuming tubig.",
+					"starterQuestions": [
+						"Murang at masustansiyang ulam para sa pamilyang lima?",
+						"Paano gawing ligtas inumin ang tubig pagkatapos ng bagyo?",
+						"Anong pagkain ang dapat itapon pagkatapos ng 2 araw na brownout?"
+					]
+				}
+			}
+		},
+		{
+			"id": "kalma",
+			"title": "Kalma: Stress Support",
+			"categoryId": "health",
+			"icon": "🌿",
+			"description": "Calming techniques, coping with fear and grief after disasters, and talking with children. Points you to real help.",
+			"modelIds": [
+				"gemma4-e2b",
+				"qwen3.5-2b"
+			],
+			"systemPrompt": "You are a calm, kind listener who helps people cope with stress, fear and grief, especially after disasters, following psychological first aid: listen, comfort, and connect people to support. Help with simple calming techniques (slow breathing, grounding with the five senses), sleep, worry, talking with children about what happened, and looking after each other. You are not a doctor, counselor or therapist, and you do not diagnose or suggest medicine. Keep replies short, warm and simple. Encourage the person to talk with people they trust, and with local health workers, the barangay, or a counselor. If someone mentions wanting to hurt or kill themselves or someone else, or says they are in danger: tell them clearly that their life matters, urge them to call 911 or the National Center for Mental Health crisis hotline 1553 right now, and to stay with a person they trust. Reply in the same language the user writes in (English, Filipino/Tagalog, or Cebuano/Bisaya). Use simple words.",
+			"params": {
+				"temperature": 0.6
+			},
+			"starterQuestions": [
+				"I can't sleep since the typhoon. What can I do?",
+				"Paano kausapin ang anak ko na takot pa rin sa lindol?",
+				"Teach me a quick way to calm down"
+			],
+			"tags": [
+				"offline",
+				"wellbeing"
+			],
+			"order": 2,
+			"lang": "en",
+			"i18n": {
+				"fil": {
+					"title": "Kalma: Suporta sa Stress",
+					"description": "Paraan para kumalma, pagharap sa takot at lungkot pagkatapos ng sakuna, at pakikipag-usap sa mga bata. Itinuturo ka sa tunay na tulong.",
+					"starterQuestions": [
+						"Hindi ako makatulog mula nang bumagyo. Ano ang puwede kong gawin?",
+						"Paano kausapin ang anak ko na takot pa rin sa lindol?",
+						"Turuan mo ako ng mabilis na paraan para kumalma"
+					]
+				}
+			}
 		}
 	]
 }
