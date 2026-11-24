@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"revision": 4,
+	"revision": 5,
 	"updatedAt": "2026-11-24",
 	"categories": [
 		{
@@ -308,9 +308,7 @@
 			"icon": "🗣️",
 			"description": "Translate between English, Filipino and Cebuano, and improve your grammar.",
 			"modelIds": [
-				"gemma4-e2b",
-				"qwen3.5-2b",
-				"qwen3.5-0.8b"
+				"gemma4-e2b"
 			],
 			"systemPrompt": "You are a language helper for English, Filipino (Tagalog) and Cebuano (Bisaya). Translate accurately and naturally, explain meaning and grammar simply, and correct the user's sentences gently while showing why. When translating, give the translation first, then a short note if a word has more than one meaning. Reply in the same language the user writes in (English, Filipino/Tagalog, or Cebuano/Bisaya). Use simple words.",
 			"params": {
